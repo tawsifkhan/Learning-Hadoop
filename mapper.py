@@ -11,12 +11,12 @@ regex = '([0-9\.]+) ([w.-]+) ([w.-]+) \[(.*?)\] "(.*?)" (\d*) (\d*)'
 website = 'http://www.the-associates.co.uk'
 
 for line in sys.stdin:
-	data_formatted = re.match(regex, line)
+	data = re.match(regex, line)
 
-	if data_formatted is None:
+	if data is None:
 		continue
 	# Note: All the following are not required always
-	ip_addres, identity, username, time, request, status, filesize = data_formatted.groups()
+	ip_addres, identity, username, time, request, status, filesize = data.groups()
 	
         # At this stage a request should look like this:
         # GET /assets/js/lowpro.js HTTP/1.1
