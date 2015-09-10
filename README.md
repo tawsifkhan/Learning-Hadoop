@@ -4,7 +4,7 @@ I started with the Udacity [Introduction to Hadoop and MapReduce](https://www.ud
 
 I found this [video](https://www.youtube.com/watch?v=bcjSe0xCHbE) pretty useful and unique to understand the objectives of the Mappers and Reducers in a Hadoop job.
 
-This repository will be updated with the mapreduce codes I have written for the mini projects. 
+This repository will be updated with the mapreduce codes I have written for the mini projects. My goal in maintaining this repository will be to keep a track of what I have done and also help anyone to get started with Hadoop. 
 
 #### Task 1
 Data Set - [Access log](http://content.udacity-data.com/courses/ud617/access_log.gz)
