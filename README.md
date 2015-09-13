@@ -13,5 +13,7 @@ Data Set - [Access log](http://content.udacity-data.com/courses/ud617/access_log
     Mapper Output - Page Name (Key), 1 (value)
     Reducer Ouput - Page Names with the total number of hits
     
+The other two tasks with the same data set - number of hits by IP and the most popular path - can be completed with some minor changes in mapper code.
+    
 
 ##### More to follow.
