@@ -12,6 +12,8 @@ Data Set - [Access log](http://content.udacity-data.com/courses/ud617/access_log
     Objective - Compute the number of hits on every file. 
     Mapper Output - Page Name (Key), 1 (value)
     Reducer Ouput - Page Names with the total number of hits
+
+    Example - /assets/js/jquery.form.js 	1803    
     
 The other two tasks with the same data set - number of hits by IP and the most popular path - can be completed with some minor changes in mapper code.
     
@@ -21,5 +23,7 @@ Data Set - [Forum data](http://content.udacity-data.com/course/hadoop/forum_data
     Objective - Create an inverted index
     Mapper Ouput - Word (Key), Node ID (value)
     Reducer Output - Word, Word count, Sorted list of node ids where the word can be found
+    
+    Example - fantastically 	5 	[17583, 1007765, 1025821, 7004477, 9006895]
 
 ##### More to follow.
