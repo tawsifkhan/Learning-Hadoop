@@ -2,22 +2,28 @@
 
 import sys
 
-hitCount = 0
+wordCount = 0
+node_id_array = set()	#Use 'set' to avoid duplicates
 oldKey = None
 
 for line in sys.stdin:
 	data_mapped = line.strip().split("\t")
-	thisKey, count = data_mapped
-	
-	# Unless it is the first key and a different key is recieved from previous save the count
+	thisKey, node_id = data_mapped
+	if len(data_mapped) != 2:
+        # Something has gone wrong. Skip this line.
+	        continue
+
 	if oldKey and oldKey != thisKey:
-	        print oldKey, "\t", hitCount
-	        oldKey = thisKey;
-	        hitCount = 0
+		print oldKey,"\t",wordCount,"\t",list(sorted(node_id_array))
+		oldKey = thisKey
+		wordCount = 0
+		node_id_array = set()
 
 	oldKey = thisKey
-	hitCount += 1
+	wordCount += 1
+	node_id_array.add(int(node_id))
 
-# Save the last key value
 if oldKey != None:
-    print oldKey, "\t", hitCount	
+	print oldKey,"\t", wordCount,"\t",list(sorted(node_id_array))
+	
+
