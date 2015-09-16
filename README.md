@@ -1,6 +1,6 @@
 # Learning-Hadoop
 
-I started with the Udacity [Introduction to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617) online course. I would recommend this course to anyone who is willing to get started with Hadoop; one of the main reasons being the easy-to-setup VM in the course which comes with Cloudera's CDH. 
+I started with the Udacity [Introduction to Hadoop and MapReduce](https://www.udacity.com/course/intro-to-hadoop-and-mapreduce--ud617) online course. I would recommend this course to anyone who is willing to get started with Hadoop; one of the main reasons being the easy-to-setup VM in the course which comes with Cloudera's CDH. I am also working towards this Data Science [course](https://www.coursera.org/specializations/jhudatascience) on Coursera.
 
 I found this [video](https://www.youtube.com/watch?v=bcjSe0xCHbE) pretty useful and unique to understand the objectives of the Mappers and Reducers in a Hadoop job. And [this](http://bradhedlund.com/2011/09/10/understanding-hadoop-clusters-and-the-network/) is a pretty comprehensive article that helped me understand the architecure.  
 
